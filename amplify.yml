@@ -1,0 +1,22 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - cd plantparent
+        - npm install
+    build:
+      commands:
+        - npm run build
+        - cd backend
+        - npm install
+        - npm install -g pm2
+        - pm2 start server.js --name "plantparent-backend"
+  artifacts:
+    baseDirectory: plantparent/build
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - plantparent/node_modules/**/*
+      - plantparent/backend/node_modules/**/*
