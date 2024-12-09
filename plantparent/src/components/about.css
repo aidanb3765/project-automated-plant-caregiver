@@ -162,6 +162,15 @@ ul li::before {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+.model-gif {
+    display: block;
+    margin: 20px auto;
+    max-width: 30%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+} 
+
 /* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
     .about-page {

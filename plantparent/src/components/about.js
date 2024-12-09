@@ -2,6 +2,7 @@ import './about.css';
 import plantImage1 from './plantImage1.png';
 import plantImage2 from './plantImage2.png';
 import productDesignImage from './sampleDesign.png';
+import modelGif from './model_gif.gif';
 
 function About() {
    return (
@@ -18,6 +19,7 @@ function About() {
             <a href="#non-functional">🔍 Non-functional Requirements</a>
             <a href="#design">💡 Conceptual Design</a>
             <a href="#example-design">🎨 Example Design</a>
+            <a href="#model">🏗️ Model Design</a>
          </aside>
 
          {/* Main Content */}
@@ -117,6 +119,14 @@ function About() {
                   <li>Customize care schedules to fit your busy lifestyle.</li>
                   <li>Gain peace of mind with real-time alerts and notifications.</li>
                </ul>
+            </section>
+
+            <section id="model">
+               <h3>🏗️ Model Design</h3>
+               <p>
+                  Below is the conceptual model created with the Shapr3D application, which will be 3D printed for the Plant Parent project.
+               </p>
+               <img src={modelGif} alt="3D Model Design" className="model-gif" />
             </section>
          </main>
       </div>
